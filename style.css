@@ -1,0 +1,114 @@
+.div1 #navlist{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+}
+.div1 #navlist li,#navlist a{
+    height: 45px;
+    display: block;
+}
+.div1 #home{
+    background: url(sprite.png) 0 0;
+    width: 45px;
+
+}
+.div1 #prev{
+    background: url(sprite.png) -47px 0;
+    width: 45px;
+}
+
+.div2 #nav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+}
+.div2 #nav li,#nav a{
+    height: 45px;
+    display: block;
+}
+.div2 #ho{
+    background: url(sprite.png) 0 0;
+    width: 300px;
+    background-repeat: no-repeat;
+
+}
+.div2 #pr{
+    background: url(sprite.png) 0 0;
+    width: 300px;
+    background-repeat: no-repeat;
+
+}
+.div2 #ne{
+    background: url(sprite.png) 0 0;
+    width: 300px;
+    background-repeat: no-repeat;
+
+}
+
+.div3 #nav1{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+}
+.div3 #nav1 li,#nav1 a{
+    height: 45px;
+    display: block;
+}
+.div3 #h{
+    background: url(sprite.png) 0 0;
+    width: 45px;
+    background-repeat: no-repeat;
+
+}
+.div3 #p{
+    background: url(sprite.png) -46px 0;
+    width: 45px;
+    background-repeat: no-repeat;
+
+}
+.div3 #n{
+    background: url(sprite.png) -90px 0;
+    width: 45px;
+    background-repeat: no-repeat;
+
+}
+
+.div4{
+    counter-reset: test;
+}
+.div4 h3::before{
+    counter-increment: test;
+    content: "web" counter(test)":";
+}
+
+.div5 {
+    counter-reset: main;
+}
+.div5 h1::before{
+    counter-increment: main;
+    content: "Main Concept" counter(main)": ";
+}
+.div5 h1{
+    counter-reset: sub;
+}
+.div5 h2::before{
+    counter-increment: sub;
+    content: counter(main) ". "counter(sub)": ";
+}
+
+.div6 ol{
+    counter-reset: list;
+    list-style-type: none;
+
+}
+.div6 li::before{
+  counter-increment: list;
+  content: counters(list,".")" ";
+}
+
+
+
+
